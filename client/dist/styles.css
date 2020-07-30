@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #123456;
+  font-family: "Mulish";
+  font-weight: 400;
+}
+
+.navbar-container {
+  background-color: #1212175c;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  height: 3%;
+}
+
+.navbar-item {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.25em;
+  padding: 0.2% 2%;
+}
+
+.navbar-item:hover {
+  color: #bac964;
+  transition: .5s all;
+}
+
+.mainImage {
+  background-image: linear-gradient(
+      to bottom,
+      #ffffff23 ,
+      #000000 )
+  , url(./assets/MainImage.JPG);
+  background-position: top;
+  background-size: cover;
+  height: 125vh;
+}
