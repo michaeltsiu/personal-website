@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;1,400;1,600;1,700&display=swap');
 
 * {
   margin: 0;
@@ -8,9 +8,94 @@
 }
 
 body {
-  background-color: #123456;
+  /* background-color: #123456; */
+  /* background-color: #CAFAFE; */
   font-family: "Mulish";
   font-weight: 400;
+}
+
+/* GRID START */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.28fr 1fr;
+  grid-template-rows: 1fr 0.25fr;
+  /* gap: 1px 1px; */
+  grid-template-areas: "Navbar Main" "Navbar Footer";
+}
+
+.Navbar {
+  grid-area: Navbar;
+  background-color: #f6f6f6;
+  height: 100vh;
+  padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.Main {
+  grid-area: Main;
+  background-color: white;
+  height: 80vh;
+}
+
+.Footer {
+  grid-area: Footer;
+  background-color: beige;
+  height: 20vh;
+}
+/* GRID END */
+
+.navbar-container {
+  text-align: center !important;
+  margin-top: 5vh;
+}
+
+.navbar-profile {
+  cursor: pointer;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+}
+
+.navbar-picture {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-image: url("./assets/ProfilePicture.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.navbar-profileName {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar-profileTitle {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.navbar-item {
+  cursor: pointer;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5d5d5d;
+}
+
+.navbar-item:hover {
+  color: black;
+  transition: .25s all;
+}
+
+/*
+.content {
+  background-color: white;
 }
 
 .navbar-container {
@@ -20,11 +105,14 @@ body {
   z-index: 99;
 }
 
+
 .navbar-list {
+  color: white;
   display: flex;
   justify-content: center;
   height: 3%;
 }
+
 
 .navbar-item {
   color: #ffffff;
@@ -32,6 +120,7 @@ body {
   font-weight: 600;
   font-size: 1.25em;
   padding: 0.2% 2%;
+  text-transform: uppercase;
 }
 
 .navbar-item:hover {
@@ -48,4 +137,13 @@ body {
   background-position: top;
   background-size: cover;
   height: 125vh;
-}
+  background-attachment: fixed;
+} */
+
+/*
+.mainImage {
+  height: 100vh;
+  background-image: url(./assets/MainImage.JPG);
+  background-attachment: fixed;
+  background-size: cover;
+} */
