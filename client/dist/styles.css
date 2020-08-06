@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-picture {
-  background-image: url("./assets/ProfilePicture.jpg");
+  background-image: url("./assets/ProfilePicture.JPG");
   background-size: cover;
   border-radius: 50%;
   cursor: pointer;
@@ -149,3 +149,14 @@ body {
   background-attachment: fixed;
   background-size: cover;
 } */
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-active {
+  text-decoration: underline;
+}

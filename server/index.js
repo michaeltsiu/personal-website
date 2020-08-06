@@ -12,6 +12,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan('dev'));
 
+// app.get('/*', function(req, res) {
+//   res.sendFile(path.join(__dirname, '../client/dist/index.html'), function(err) {
+//     if (err) {
+//       res.status(500).send(err)
+//     }
+//   })
+// })
+
 app.use('/', express.static(path.join(__dirname, '../client/dist')));
 
 app.listen(port, () => console.log(`app listening at http://localhost:${port}`));
