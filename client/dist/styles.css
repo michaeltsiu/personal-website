@@ -52,38 +52,40 @@ body {
 }
 
 .navbar-profile {
-  cursor: pointer;
   margin-top: 1vh;
   margin-bottom: 4vh;
 }
 
 .navbar-picture {
-  display: block;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto;
-  margin-bottom: 10px;
   background-image: url("./assets/ProfilePicture.jpg");
   background-size: cover;
   border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 160px;
 }
 
 .navbar-profileName {
-    font-size: 2em;
-    font-weight: 700;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .navbar-profileTitle {
+  cursor: pointer;
   font-weight: 400;
   font-style: italic;
 }
 
 .navbar-item {
   cursor: pointer;
-  margin: 0 0 15px 0;
+  margin: 0 0 1em 0;
   padding: 0;
   list-style: none;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
   color: #5d5d5d;
 }

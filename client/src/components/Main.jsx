@@ -11,17 +11,27 @@ class Main extends React.Component {
     this.state = {
 
     }
+    this.renderPage = this.renderPage.bind(this);
+  }
+
+  renderPage() {
+    if (this.props.currentPage === "Home") {
+      return <Home />
+    } else if (this.props.currentPage === "Portfolio") {
+      return <Portfolio />
+    } else if (this.props.currentPage === "Resume") {
+      return <Resume />
+    } else if (this.props.currentPage === "Technical Skills") {
+      return <TechnicalSkills />
+    } else if (this.props.currentPage === "Contact") {
+      return <Contact />
+    }
   }
 
   render() {
     return (
       <div>
-        This is Main
-        <Home />
-        <Portfolio />
-        <Resume />
-        <TechnicalSkills />
-        <Contact />
+        {this.renderPage()}
       </div>
     )
   }

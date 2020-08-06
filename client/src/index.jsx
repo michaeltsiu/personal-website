@@ -9,20 +9,27 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      currentPage: 'Home'
     }
+    this.changePage = this.changePage.bind(this);
+  }
+
+  changePage(value) {
+    this.setState({
+      currentPage: value
+    })
   }
 
   render() {
-    console.log("I AM HERE")
+    console.log(this.state.currentPage)
     return (
       <React.Fragment>
         <div className="grid-container">
           <div className="Navbar">
-            <Navbar />
+            <Navbar changePage={this.changePage} />
           </div>
           <div className="Main">
-            <Main />
+            <Main currentPage={this.state.currentPage} />
           </div>
           <div className="Footer">
            <Footer />

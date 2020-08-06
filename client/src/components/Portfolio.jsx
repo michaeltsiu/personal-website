@@ -9,7 +9,7 @@ class Portfolio extends React.Component {
   }
   render() {
     return (
-      <div></div>
+      <div>This is Portfolio</div>
     )
   }
 }
