@@ -16,17 +16,34 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container">
-        <NavLink
-          to='/'
-          exact
-          activeStyle={activeStyle}
-          className='nav-link'>
           <div className="navbar-profile">
-            <div className="navbar-picture"></div>
-            <div className="navbar-profileName">Michael Siu</div>
-            <div className="navbar-profileTitle">Software Engineer</div>
+              <div>
+              <NavLink
+                to='/'
+                exact
+                activeStyle={activeStyle}
+                className='navlink-profile'>
+                  <span className="navbar-picture"></span>
+                </NavLink>
+              </div>
+              <div className="navbar-profileName">
+                <NavLink
+                to='/'
+                exact
+                activeStyle={activeStyle}
+                className='navlink-profile'>
+                  <span>Michael Siu</span>
+                </NavLink>
+                </div>
+              <div className="navbar-profileTitle">
+              <NavLink
+                to='/'
+                exact
+                activeStyle={activeStyle}
+                className='navlink-profile'>
+                <span>Software Engineer</span>
+                </NavLink></div>
           </div>
-        </NavLink>
         <ul className="navbar-list">
           <li className="navbar-item">
             <NavLink

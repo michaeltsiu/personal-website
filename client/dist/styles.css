@@ -60,28 +60,26 @@ body {
   background-image: url("./assets/ProfilePicture.JPG");
   background-size: cover;
   border-radius: 50%;
-  cursor: pointer;
-  display: block;
+  display: inline-block;
   height: 160px;
   margin: 0 auto;
   margin-bottom: 10px;
   width: 160px;
 }
 
-.navbar-profileName {
-  cursor: pointer;
+.navbar-profileName span{
   font-size: 2em;
   font-weight: 700;
+  color: black;
 }
 
-.navbar-profileTitle {
-  cursor: pointer;
+.navbar-profileTitle span{
+  color: black;
   font-weight: 400;
   font-style: italic;
 }
 
 .navbar-item {
-  cursor: pointer;
   margin: 0 0 1em 0;
   padding: 0;
   list-style: none;
@@ -179,12 +177,13 @@ a.nav-link:hover::before {
 .nav-link {
   font-size: 18px;
   font-weight: bold;
-  text-decoration: none;
   color: inherit;
 }
 
 .navbar-active {
-  /* text-decoration: underline !important; */
-  /* text-decoration: none; */
   border-bottom: 100px solid black !important;
+}
+
+.navlink-profile {
+  text-decoration: none;
 }
