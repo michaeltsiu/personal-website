@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { faGithub, faFacebook, faInstagram, faLinkedinIn, faAngellist } from '@fortawesome/fontawesome-free-brands';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const activeStyle = {
   color: 'black'
 }
@@ -36,7 +39,7 @@ export default function Navbar () {
               <span>Software Engineer</span>
               </NavLink></div>
         </div>
-      <ul className="navbar-list">
+      <ul>
         <li className="navbar-item">
           <NavLink
             to='/'
@@ -88,6 +91,22 @@ export default function Navbar () {
           </NavLink>
         </li>
       </ul>
+      <div className="navbar-footer">
+        <div className="navbar-icons">
+            <a href='https://github.com/michaeltsiu' target="_blank">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href='https://www.facebook.com/msiu13/' target="_blank">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+        </div>
+      </div>
     </div>
   )
 };

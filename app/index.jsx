@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles.css';
 
 import Footer from './components/Footer.jsx';
-import Main from './components/Main.jsx';
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
 
@@ -19,15 +18,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: 'Home'
     }
-    this.changePage = this.changePage.bind(this);
-  }
-
-  changePage(value) {
-    this.setState({
-      currentPage: value
-    })
   }
 
   render() {
@@ -50,16 +41,12 @@ class App extends React.Component {
                   <Route render={() => <h1>404</h1>} />
                 </Switch>
               </React.Suspense>
-              {/* <Main currentPage={this.state.currentPage} /> */}
             </div>
           </Router>
           <div className="Footer">
            <Footer />
           </div>
         </div>
-
-        {/* <div className="mainImage"> */}
-        {/* <div className="mainText"> */}
       </React.Fragment>
     )
   }

@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: #f6f6f6;
   font-family: "Mulish";
   font-weight: 400;
 }
@@ -33,7 +34,7 @@ body {
 
 .Main {
   grid-area: Main;
-  background-color: white;
+  background-color: #f6f6f6;
   height: 80vh;
 }
 
@@ -44,8 +45,13 @@ body {
 }
 /* GRID END */
 
+/* NAVBAR START */
 .navbar-container {
   text-align: center !important;
+  margin-top: 5vh;
+}
+
+.navbar-footer {
   margin-top: 5vh;
 }
 
@@ -75,6 +81,25 @@ body {
   color: black;
   font-weight: 400;
   font-style: italic;
+}
+
+.navbar-icons a{
+  list-style: none;
+  color: #888888;
+  text-decoration: none;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-size: 1.5em;
+}
+
+.navbar-icons a:hover{
+  list-style: none;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .navbar-item {
@@ -127,6 +152,23 @@ a.navlink-li:hover::before {
   transform: scaleX(1);
 }
 
+/* NAVBAR END */
+
+.home-main {
+  display: flex;
+}
+
+.home-picture {
+  width: 50vw;
+  background-image: url(./assets/StormTrooper.JPG);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-text {
+  width: 50vw
+}
 /*
 
 .mainImage {
