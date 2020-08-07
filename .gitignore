@@ -6,3 +6,5 @@ client/dist/1.bundle.js
 client/dist/2.bundle.js
 client/dist/3.bundle.js
 client/dist/4.bundle.js
+client/dist/
+dist/*

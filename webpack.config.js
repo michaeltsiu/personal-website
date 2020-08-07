@@ -1,34 +1,9 @@
-var path = require('path');
+const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var SRC_DIR = path.join(__dirname, '/client/src');
-var DIST_DIR = path.join(__dirname, '/client/dist');
-
-// module.exports = {
-//   entry: './client/src/index.jsx',
-//   output: {
-//     filename: 'bundle.js',
-//     path: path.resolve(__dirname, 'dist'),
-//     publicPath: '/'
-//   },
-//   module: {
-//     rules: [
-//       { test: /\.js$|jsx/, use: 'babel-loader' },
-//       { test: /\.css$/, use: ['style-loader', 'css-loader' ]}
-//     ]
-//   },
-//   mode: 'development',
-//   plugins: [
-//     new HtmlWebpackPlugin({
-//       template: 'client/dist/index.html'
-//     })
-//   ],
-//   devServer: {
-//     historyApiFallback: true
-//   }
-// };
-
+const SRC_DIR = path.join(__dirname, '/app/src');
+const DIST_DIR = path.join(__dirname, '/app/dist');
 
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
@@ -51,6 +26,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(gif|svg|JPG|png)$/,
+        loader: "file-loader",
       }
     ],
   },
@@ -59,5 +38,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(`${DIST_DIR}/index.html`),
+      filename: 'index.html'
+    })
+  ]
 };
