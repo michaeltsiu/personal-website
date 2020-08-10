@@ -18,9 +18,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 0.28fr 1fr;
-  grid-template-rows: 1fr 0.25fr;
-  /* gap: 1px 1px; */
-  grid-template-areas: "Navbar Main" "Navbar Footer";
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Navbar Main";
 }
 
 .Navbar {
@@ -35,13 +35,13 @@ body {
 .Main {
   grid-area: Main;
   background-color: #f6f6f6;
-  height: 80vh;
+  height: 100vh;
 }
 
 .Footer {
-  grid-area: Footer;
-  background-color: beige;
+  background-color: rgb(36, 36, 36);
   height: 20vh;
+  color: white;
 }
 /* GRID END */
 
@@ -159,34 +159,51 @@ a.navlink-li:hover::before {
 }
 
 .home-picture {
+  background-color: beige;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
   width: 50vw;
-  background-image: url(./assets/StormTrooper.JPG);
+}
+
+.home-picture1 {
+  background-image: url(./assets/ProfilePicture.JPG);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+.home-picture2 {
+  width: 50vw;
+  background-image: url(./assets/MainImage.png);
   background-position: top;
   background-size: cover;
   height: 100vh;
 }
 
 .home-text {
-  width: 50vw
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20vh;
+  padding: 3em;
 }
-/*
 
-.mainImage {
-  background-image: linear-gradient(
-      to bottom,
-      #ffffff23 ,
-      #000000 )
-  , url(./assets/MainImage.JPG);
-  background-position: top;
-  background-size: cover;
-  height: 125vh;
-  background-attachment: fixed;
-} */
+.home-title {
+  color: #a7a7a7;
+  font-size: 1.5em;
+}
 
-/*
-.mainImage {
-  height: 100vh;
-  background-image: url(./assets/MainImage.JPG);
-  background-attachment: fixed;
-  background-size: cover;
-} */
+.home-header {
+  margin-top: 1.5vh;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+
+.home-body {
+  color: #a7a7a7;
+  font-size: 1.25em;
+  margin-top: 2.5vh;
+}

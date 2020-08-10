@@ -41,11 +41,11 @@ class App extends React.Component {
                   <Route render={() => <h1>404</h1>} />
                 </Switch>
               </React.Suspense>
+              <div className="Footer">
+                <Footer />
+              </div>
             </div>
           </Router>
-          <div className="Footer">
-           <Footer />
-          </div>
         </div>
       </React.Fragment>
     )
