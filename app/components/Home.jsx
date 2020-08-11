@@ -25,6 +25,7 @@ export default function Home() {
         <span className="home-title">Hello! I'm</span>
         <div className="home-header">Michael Siu <span style={{ color: 'rgb(235, 198, 104)' }}>A Software Developer.</span></div>
         <div className="home-body">I am a Software Engineer that is passionate about where the future in tech may lead us. I have always been intrigued by the way websites have worked and what little improvements I could make to create a better user experience. I love to program and see what I can create from a simple idea and turn it into something that I can show to all my family members, friends and colleagues.</div>
+        <div className="signature">Michael Siu</div>
       </div>
     </div>
   )
