@@ -46,9 +46,9 @@ class App extends React.Component {
                   <Route render={() => <h1>404! Page not found. 😰</h1>} />
                 </Switch>
               </React.Suspense>
-              <div className="Footer">
+              {/* <div className="Footer">
                 <Footer />
-              </div>
+              </div> */}
             </div>
           </Router>
         </div>

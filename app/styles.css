@@ -242,7 +242,7 @@ a.navlink-li:hover::before {
   margin-top: 12vh;
   margin-left: 15vw;
   margin-right: 15vw;
-  height: 90vh;
+  height: 78vh;
   display: flex;
   justify-content: space-between;
 }
@@ -271,8 +271,15 @@ a.navlink-li:hover::before {
   box-shadow: 2px 5px 10px 0px #d2cdc5;
   max-height: 100%;
   max-width: 100%;
+  transition: box-shadow 0.3s;
 }
 
+.resume-img:hover {
+  opacity: 1;
+  box-shadow: 4px 10px 20px 0px #d2cdc5;
+  max-height: 100%;
+  max-width: 100%;
+}
 /* RESUME END */
 
 /* CONTACT START */
@@ -284,16 +291,17 @@ a.navlink-li:hover::before {
   text-align: center;
   color: #a7a7a7;
   font-size: 1.25em;
-  /* margin-top: 5vh;
-  margin-left: 5vw; */
-  height: 90vh;
+  height: 35vh;
   text-decoration: none;
+  margin-bottom: 55vh;
 }
 
 .contact-email {
-  border-bottom: dotted 2px black;
+  border-bottom: dotted 2px black !important;
   text-decoration: none;
   color: inherit;
+  padding-bottom: 2px;
+  margin-top: 2vh;
 }
 
 /* CONTACT END */

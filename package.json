@@ -24,6 +24,7 @@
   "homepage": "https://github.com/michaeltsiu/personal-website#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "react": "^16.13.1",

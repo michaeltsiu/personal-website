@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { faGithub, faFacebook, faInstagram, faLinkedinIn, faAngellist } from '@fortawesome/fontawesome-free-brands';
+import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const activeStyle = {
@@ -105,6 +106,9 @@ export default function Navbar () {
             <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
+            <a href='mailto:michaeltsiu13@gmail.com'>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
         </div>
       </div>
     </div>
