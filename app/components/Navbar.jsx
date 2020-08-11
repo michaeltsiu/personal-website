@@ -93,6 +93,9 @@ export default function Navbar () {
       </ul>
       <div className="navbar-footer">
         <div className="navbar-icons">
+            <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
             <a href='https://github.com/michaeltsiu' target="_blank">
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -101,9 +104,6 @@ export default function Navbar () {
             </a>
             <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
-              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
         </div>
       </div>

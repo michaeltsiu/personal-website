@@ -7,12 +7,18 @@ import './styles.css';
 import Footer from './components/Footer.jsx';
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
+import Home from './components/Home.jsx';
 
-const Home = React.lazy(() => import('./components/Home.jsx'));
-const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
-const Resume = React.lazy(() => import('./components/Resume.jsx'));
-const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
-const Contact = React.lazy(() => import('./components/Contact.jsx'));
+import Portfolio from './components/Portfolio.jsx';
+import Resume from './components/Resume.jsx';
+import TechnicalSkills from './components/TechnicalSkills.jsx';
+import Contact from './components/Contact.jsx'
+
+// const Home = React.lazy(() => import('./components/Home.jsx'));
+// const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
+// const Resume = React.lazy(() => import('./components/Resume.jsx'));
+// const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
+// const Contact = React.lazy(() => import('./components/Contact.jsx'));
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +28,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.currentPage)
     return (
       <React.Fragment>
         <div className="grid-container">
@@ -38,7 +43,7 @@ class App extends React.Component {
                   <Route exact path='/resume' component={Resume} />
                   <Route exact path='/technical-skills' component={TechnicalSkills} />
                   <Route exact path='/contact' component={Contact} />
-                  <Route render={() => <h1>404</h1>} />
+                  <Route render={() => <h1>404! Page not found. 😰</h1>} />
                 </Switch>
               </React.Suspense>
               <div className="Footer">

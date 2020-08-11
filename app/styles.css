@@ -19,7 +19,6 @@ body {
   display: grid;
   grid-template-columns: 0.28fr 1fr;
   grid-template-rows: 1fr;
-  gap: 1px 1px;
   grid-template-areas: "Navbar Main";
 }
 
@@ -34,7 +33,7 @@ body {
 
 .Main {
   grid-area: Main;
-  background-color: #f6f6f6;
+  background-color: white;
   height: 100vh;
 }
 
@@ -44,6 +43,20 @@ body {
   color: white;
 }
 /* GRID END */
+
+/* ETC START */
+
+.header {
+  background-color: rgb(235, 198, 104);
+  height: 10vh;
+  font-size: 3em;
+  font-weight: 700;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+}
+
+/* ETC END */
 
 /* NAVBAR START */
 .navbar-container {
@@ -154,6 +167,7 @@ a.navlink-li:hover::before {
 
 /* NAVBAR END */
 
+/* HOME START */
 .home-main {
   display: flex;
 }
@@ -193,7 +207,8 @@ a.navlink-li:hover::before {
 
 .home-title {
   color: #a7a7a7;
-  font-size: 1.5em;
+  font-size: 1.75em;
+  font-weight: 400;
 }
 
 .home-header {
@@ -207,3 +222,44 @@ a.navlink-li:hover::before {
   font-size: 1.25em;
   margin-top: 2.5vh;
 }
+
+/* HOME END */
+
+/* TECH START */
+
+.tech-list {
+  margin-top: 12vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-cat {
+  font-size: 2em;
+  border-bottom: 2px solid black;
+}
+
+.tech-item {
+  font-size: 1.2em;
+}
+
+/* TECH END */
+
+/* RESUME START */
+
+.resume-container {
+  height: 85vh;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.resume-img {
+  opacity: 1;
+  box-shadow: 2px 5px 10px 0px #d2cdc5;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* RESUME END */
