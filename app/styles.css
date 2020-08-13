@@ -261,8 +261,9 @@ a.navlink-li:hover::before {
 /* RESUME START */
 
 .resume-container {
-  height: 85vh;
+  height: 80vh;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   text-align: center;
 }
 
