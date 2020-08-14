@@ -51,12 +51,10 @@ body {
 .header {
   background-color: rgb(235, 198, 104);
   height: 10vh;
+  padding: 2.5vh;
   font-size: 3em;
   font-weight: 700;
-  /* margin-top: 5vh; */
-  display: flex;
-  /* text-align: center; */
-  justify-content: center;
+  text-align: center;
 }
 
 .icons a{
@@ -260,11 +258,24 @@ a.navlink-li:hover::before {
   font-size: 2em;
   border-bottom: 2px solid black;
   margin-bottom: 1vh;
+  text-align: center;
 }
 
 .tech-item {
   font-size: 1.2em;
   line-height: 1.5;
+}
+
+.tech20 {
+  margin-left: 40px;
+}
+
+.tech30 {
+  margin-left: 30px;
+}
+
+.tech40 {
+  margin-left: 20px;
 }
 
 /* TECH END */
