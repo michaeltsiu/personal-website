@@ -328,3 +328,12 @@ a.navlink-li:hover::before {
 }
 
 /* CONTACT END */
+
+/* PORTFOLIO START */
+.portfolio-title {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.5em;
+}
+/* PORTFOLIO END */
+
