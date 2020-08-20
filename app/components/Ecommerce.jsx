@@ -19,6 +19,7 @@ class Ecommerce extends React.Component {
             <li>Node.js</li>
             <li>hosted on AWS EC2 and AWS RDS</li>
           </ul>
+          <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">codebase</a>
         </div>
       </div>
     )

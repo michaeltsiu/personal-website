@@ -47,6 +47,13 @@ body {
 
 /* ETC START */
 
+.error {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 25vh;
+}
 
 .header {
   background-color: rgb(235, 198, 104);

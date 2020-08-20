@@ -22,6 +22,7 @@ class SystemDesign extends React.Component {
             <li>hosted on AWS EC2 t2.micros x 3</li>
             <li>Load balancing & caching via NGINX</li>
           </ul>
+          <a href="https://github.com/proj-minus-ultra/navbar-proxy" target="_blank">codebase</a>
         </div>
       </div>
     )

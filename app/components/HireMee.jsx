@@ -18,6 +18,7 @@ class HireMee extends React.Component {
           <li>Node.js</li>
           <li>hosted on AWS EC2 and AWS RDS</li>
         </ul>
+        <a href="https://github.com/hire-mee/hire-mee" target="_blank">codebase</a>
       </div>
     )
   }

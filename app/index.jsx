@@ -43,7 +43,7 @@ class App extends React.Component {
                   <Route exact path='/resume' component={Resume} />
                   <Route exact path='/technical-skills' component={TechnicalSkills} />
                   <Route exact path='/contact' component={Contact} />
-                  <Route render={() => <h1>404! Page not found. 😰</h1>} />
+                  <Route render={() => <h1 className="error">Error: 404! Page not found. 😰</h1>} />
                 </Switch>
               </React.Suspense>
               {/* <div className="Footer">
