@@ -362,11 +362,29 @@ a.navlink-li:hover::before {
 }
 
 .portfolio-cat {
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-  background-color: beige;
+  margin: 3vh 2vw 2vh 2vw;
 }
+
+.portfolio-main {
+  display: flex;
+}
+
+.portfolio-main div {
+  margin-top: 2vh;
+  margin-left: 2vw;
+  font-size: 2em;
+}
+
+.portfolio-main span {
+  border-bottom: 0.1em solid black;
+}
+
+.portfolio-main div ul {
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 0.75em;
+  line-height: 1.5
+}
+
 /* PORTFOLIO END */
 
