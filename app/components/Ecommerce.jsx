@@ -11,21 +11,24 @@ class Ecommerce extends React.Component {
     return (
       <div>
         <div className="portfolio-main">
-          <video src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/FEC.mp4" alt="GIF NOT FOUND"  width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
-          <div>
-            <span>Built with:</span>
-            <ul>
-              <li>React</li>
-              <li>Express</li>
-              <li>MySQL</li>
-              <li>Node.js</li>
-              <li>hosted on AWS EC2 & RDS</li>
-            </ul>
+          <video src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/FEC.mp4" alt="GIF NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
+        </div>
+        <div>
+          <div className="portfolio-tech">
+            <div>
+              <span>Built with:</span>
+              <ul>
+                <li>React</li>
+                <li>Express</li>
+                <li>MySQL</li>
+                <li>Node.js</li>
+                <li>hosted on AWS EC2 & RDS</li>
+              </ul>
+            </div>
           </div>
         </div>
-          <h1>Getting Started</h1>
 
-          <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">codebase</a>
+        <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">codebase</a>
       </div>
     )
   }

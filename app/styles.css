@@ -359,6 +359,8 @@ a.navlink-li:hover::before {
   margin-bottom: 2.5vh;
   height: 75vh;
   border: 2px solid black;
+  opacity: 1;
+  box-shadow: 2px 5px 10px 0px #d2cdc5;
 }
 
 .portfolio-cat {
@@ -367,19 +369,24 @@ a.navlink-li:hover::before {
 
 .portfolio-main {
   display: flex;
+  justify-content: center;
+  margin-top: 1vh;
 }
 
-.portfolio-main div {
-  margin-top: 2vh;
-  margin-left: 2vw;
-  font-size: 2em;
+.portfolio-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-left: 4vw;
+  font-size: 1.5em;
 }
 
-.portfolio-main span {
+.portfolio-tech span {
   border-bottom: 0.1em solid black;
 }
 
-.portfolio-main div ul {
+.portfolio-tech ul {
   margin-top: 1vh;
   margin-left: 1vw;
   font-size: 0.75em;
