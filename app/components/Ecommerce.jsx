@@ -11,7 +11,7 @@ class Ecommerce extends React.Component {
     return (
       <div>
         <div className="portfolio-main">
-          <video src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/FEC.mp4" alt="GIF NOT FOUND"  width="75%" height="auto" max-width="30vw" loop="loop" autoplay="autoplay" />
+          <video src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/FEC.mp4" alt="GIF NOT FOUND"  width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
           <div>
             <span>Built with:</span>
             <ul>
@@ -23,7 +23,7 @@ class Ecommerce extends React.Component {
             </ul>
           </div>
         </div>
-          <div>Getting Started</div>
+          <h1>Getting Started</h1>
 
           <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">codebase</a>
       </div>
