@@ -23,6 +23,8 @@ class Ecommerce extends React.Component {
             </ul>
           </div>
         </div>
+          <div>Getting Started</div>
+
           <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">codebase</a>
       </div>
     )

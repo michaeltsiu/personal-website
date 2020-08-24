@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaAngellist } from 'react-icons/fa';
 
 const activeStyle = {
   color: 'black'
@@ -17,11 +17,11 @@ export default function Contact () {
             <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
               <FaLinkedin />
             </a>
+            <a href='https://angel.co/u/michaeltsiu' target="_blank">
+              <FaAngellist />
+            </a>
             <a href='https://github.com/michaeltsiu' target="_blank">
               <FaGithub />
-            </a>
-            <a href='https://www.facebook.com/msiu13/' target="_blank">
-              <FaFacebook />
             </a>
             <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
               <FaInstagram />
