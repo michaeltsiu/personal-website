@@ -25,7 +25,7 @@ class Ecommerce extends React.Component {
       <div className="portfolio-main">
         <div className="portfolio-hero">
           <div className="portfolio-video">
-            <video src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/FEC.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
+            <video src="/app/assets/Portfolio/FEC.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
           </div>
 
           <div className="portfolio-tech">
