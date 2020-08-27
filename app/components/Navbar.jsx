@@ -4,7 +4,10 @@ import { NavLink } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaAngellist } from 'react-icons/fa';
 
 const activeStyle = {
-  color: 'black'
+  color: 'black',
+  // borderBottom: '2px solid black',
+  // textDecoration: 'underline',
+  // textUnderlineOffset: '0.75em'
 }
 
 export default function Navbar () {
@@ -38,8 +41,8 @@ export default function Navbar () {
               <span>Software Engineer</span>
               </NavLink></div>
         </div>
-      <ul>
-        <li className="navbar-item">
+      <div>
+        <div className="navbar-item">
           <NavLink
             to='/'
             exact
@@ -48,8 +51,8 @@ export default function Navbar () {
             className="navlink-li">
               Home
             </NavLink>
-        </li>
-        <li className="navbar-item">
+        </div>
+        <div className="navbar-item">
           <NavLink
             to='/portfolio'
             exact
@@ -58,8 +61,8 @@ export default function Navbar () {
             className="navlink-li">
               Portfolio
           </NavLink>
-        </li>
-        <li className="navbar-item">
+        </div>
+        <div className="navbar-item">
           <NavLink
             to='/resume'
             exact
@@ -68,8 +71,8 @@ export default function Navbar () {
             className="navlink-li">
               Resume
           </NavLink>
-        </li>
-        <li className="navbar-item">
+        </div>
+        <div className="navbar-item">
           <NavLink
             to='/technical-skills'
             exact
@@ -78,8 +81,8 @@ export default function Navbar () {
             className="navlink-li">
               Technical Skills
           </NavLink>
-        </li>
-        <li className="navbar-item">
+        </div>
+        <div className="navbar-item">
           <NavLink
             to='/contact'
             exact
@@ -88,8 +91,8 @@ export default function Navbar () {
             className="navlink-li">
               Contact
           </NavLink>
-        </li>
-      </ul>
+        </div>
+      </div>
       <div className="navbar-footer">
         <div className="icons">
             <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">

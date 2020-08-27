@@ -48,9 +48,9 @@ class Ecommerce extends React.Component {
           </div>
         </div>
 
-        <div className="ecommerce-body" ref={ref}>
-          <div className="ecommerce-header">From the beginning</div>
-          <div className="ecommerce-body">
+        <div className="portfolio-text" ref={ref}>
+          <div className="portfolio-header">Overview</div>
+          <div className="portfolio-innertext">
             <p></p>
           </div>
           <div>You can find the codebase of the E-commerce clone project <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">

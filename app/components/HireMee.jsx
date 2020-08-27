@@ -48,9 +48,9 @@ class HireMee extends React.Component {
           </div>
         </div>
 
-        <div className="ecommerce-body" ref={ref}>
-          <div className="ecommerce-header">From the beginning</div>
-          <div className="ecommerce-body">
+        <div className="portfolio-text" ref={ref}>
+          <div className="portfolio-header">Overview</div>
+          <div className="portfolio-innertext">
             <p></p>
           </div>
           <div>You can find the codebase of the Hire-Mee project <a href="https://github.com/hire-mee/hire-mee" target="_blank">
