@@ -5,9 +5,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaAngellist } from 'reac
 
 const activeStyle = {
   color: 'black',
-  // borderBottom: '2px solid black',
-  // textDecoration: 'underline',
-  // textUnderlineOffset: '0.75em'
+  // textDecoration: 'underline'
 }
 
 export default function Navbar () {
