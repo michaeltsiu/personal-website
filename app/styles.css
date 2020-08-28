@@ -375,9 +375,9 @@ a.navlink-li:hover::before {
   margin-top: 1vh;
 }
 
-.portfolio-hero {
+/* .portfolio-hero {
   height: 75vh;
-}
+} */
 
 .portfolio-video {
   display: flex;
@@ -389,7 +389,7 @@ a.navlink-li:hover::before {
   justify-content: center;
   text-align: center;
   margin-top: 2vh;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .portfolio-tech span {
@@ -404,7 +404,7 @@ a.navlink-li:hover::before {
 }
 
 .portfolio-arrow {
-  margin-top: 2vh;
+  margin-top: 1vh;
   /* margin-bottom: 4vh; */
   display: flex;
   justify-content: center;
@@ -420,3 +420,8 @@ a.navlink-li:hover::before {
   margin-top: 5vh;
   font-size: 2em;
 }
+
+.portfolio-system {
+  display: flex
+}
+
