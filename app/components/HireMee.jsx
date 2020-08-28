@@ -25,9 +25,8 @@ class HireMee extends React.Component {
       <div className="portfolio-main">
         <div className="portfolio-hero">
           <div className="portfolio-video">
-            <video src="/app/assets/Portfolio/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
+            <video src="/app/assets/Portfolio/Hire-mee/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
           </div>
-
           <div className="portfolio-tech">
             <div>
               <span>Built with:</span>
@@ -40,7 +39,6 @@ class HireMee extends React.Component {
               </ul>
             </div>
           </div>
-
           <div className="portfolio-arrow">
             <div onClick={this.handleClick}>
              <MdKeyboardArrowDown />
@@ -53,9 +51,8 @@ class HireMee extends React.Component {
           <div className="portfolio-innertext">
             <p></p>
           </div>
-          <div>You can find the codebase of the Hire-Mee project <a href="https://github.com/hire-mee/hire-mee" target="_blank">
-          here
-        </a></div>
+          <div>You can find the codebase of the Hire-Mee project <a href="https://github.com/hire-mee/hire-mee" target="_blank">here</a>
+        </div>
         </div>
       </div>
     )
