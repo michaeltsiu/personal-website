@@ -25,7 +25,7 @@ class Ecommerce extends React.Component {
       <div className="portfolio-main">
         <div className="portfolio-hero">
           <div className="portfolio-video">
-            <video src="/app/assets/Portfolio/FEC.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
+            <video src="/app/assets/Portfolio/Ecommerce/Ecommerce-Overview.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="30vw" loop="loop" autoPlay="autoplay" />
           </div>
 
           <div className="portfolio-tech">
@@ -53,9 +53,8 @@ class Ecommerce extends React.Component {
           <div className="portfolio-innertext">
             <p></p>
           </div>
-          <div>You can find the codebase of the E-commerce clone project <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">
-          here
-        </a></div>
+          <div>You can find the codebase of the E-commerce clone project <a href="https://github.com/proj-plus-ultra/fenty-recommended" target="_blank">here</a>
+          </div>
         </div>
       </div>
     )
