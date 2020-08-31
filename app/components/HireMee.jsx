@@ -33,9 +33,8 @@ class HireMee extends React.Component {
               <ul>
                 <li>React</li>
                 <li>Express</li>
-                <li>MySQL</li>
+                <li>PostgreSQL</li>
                 <li>Node.js</li>
-                <li>hosted on AWS EC2 and AWS RDS</li>
               </ul>
             </div>
           </div>
