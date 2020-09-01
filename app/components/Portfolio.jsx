@@ -12,7 +12,7 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      category: 'ecommerce'
+      category: 'hire-mee'
     }
     this.changePage = this.changePage.bind(this);
     this.currentPage = this.currentPage.bind(this);
@@ -49,9 +49,9 @@ class Portfolio extends React.Component {
         <div>
             <ul className="portfolio-title">
               <li
-                className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
-                onClick={() => this.changePage("ecommerce")}>
-                  E-Commerce clone
+                className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
+                onClick={() => this.changePage("hire-mee")}>
+                  Hire-Mee
               </li>
               <li
                 className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
@@ -59,9 +59,9 @@ class Portfolio extends React.Component {
                   System Design
               </li>
               <li
-                className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
-                onClick={() => this.changePage("hire-mee")}>
-                  Hire-Mee
+                className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
+                onClick={() => this.changePage("ecommerce")}>
+                  E-Commerce clone
               </li>
             </ul>
           </div>

@@ -373,10 +373,6 @@ a.navlink-li:hover::before {
   margin-top: 1vh;
 }
 
-/* .portfolio-hero {
-  height: 75vh;
-} */
-
 .portfolio-video {
   display: flex;
   justify-content: center;
@@ -390,36 +386,23 @@ a.navlink-li:hover::before {
   font-size: 1.1em;
 }
 
-.portfolio-tech span {
-  border-bottom: 0.1em solid black;
-}
-
-.portfolio-tech ul {
-  margin-top: 1vh;
-  margin-left: 1vw;
-  font-size: 0.75em;
-  line-height: 1.5
-}
-
-.portfolio-arrow {
-  margin-top: 1vh;
-  /* margin-bottom: 4vh; */
+.portfolio-summary {
   display: flex;
   justify-content: center;
-  font-size: 2em;
+  margin-top: 4vh;
+  color: #a7a7a7;
+  font-size: 1.25em;
 }
 
-.portfolio-arrow div {
-  cursor: pointer;
+.portfolio-icon a{
+  color: #888888;
+  font-size: 1.2em;
+  margin-left: 2vw;
 }
+
+.portfolio-icon a:hover{
+  color: rgb(80, 80, 80);
+  transition: all 0.2s ease-in-out 0s;
+}
+
 /* PORTFOLIO END */
-
-.portfolio-header {
-  margin-top: 5vh;
-  font-size: 2em;
-}
-
-.portfolio-system {
-  display: flex
-}
-

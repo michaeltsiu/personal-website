@@ -1,38 +1,29 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 
-class SystemDesign extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+export default function SystemDesign() {
+  return (
+    <div className="portfolio-main">
 
-    }
-  }
+      <div className="portfolio-video">
+        <img src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" width="50%" height="auto" max-width="75vw" />
+      </div>
 
-  render() {
-    return (
-      <div className="portfolio-main">
+      <div className="portfolio-tech">
+        React | PostgreSQL | AWS | Ubuntu | Artillery | Loader.io | NGINX
 
-        <div className="portfolio-hero">
-
-          <div className="portfolio-video">
-            <img src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" width="50%" height="auto" max-width="30vw" />
-          </div>
-
-          <div className="portfolio-tech">
-            React | PostgreSQL | AWS | Ubuntu | Artillery | Loader.io | NGINX
-          </div>
-
-          <div className="icons">
-            <a href='https://github.com/proj-minus-ultra/navbar-proxy' target="_blank">
-              <FaGithub />
-            </a>
-          </div>
-
+          <div className="portfolio-icon">
+          <a href='https://github.com/proj-minus-ultra/navbar-proxy' target="_blank">
+            <FaGithub />
+          </a>
         </div>
       </div>
-    )
-  }
-}
 
-export default SystemDesign;
+      <div className="portfolio-summary">
+        Horizontally scaled system design on an inherited codebase deployed on 4 AWS EC2 t2 micro instances capable of handling 10,579 client requests per second, 0% error rate and 61ms average response time. Load balanced and cached via NGINX.
+        </div>
+
+
+    </div>
+  )
+};
