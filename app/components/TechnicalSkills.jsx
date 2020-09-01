@@ -27,7 +27,7 @@ export default function TechnicalSkills () {
         <div>
           <h1 className="tech-cat">Front-End</h1>
           <ul className="tech-item">
-            <li className="tech20"><Icon icon={javascriptIcon} width="20" /> Javascript[ES5 & ES6]</li>
+            <li className="tech20"><Icon icon={javascriptIcon} width="20" /> Javascript</li>
             <li className="tech20"><Icon icon={reactIcon} width="20" /> React</li>
             <li className="tech20"><Icon icon={reduxIcon} width="20" /> Redux</li>
             <li className="tech20"><Icon icon={html5} width="20" /> HTML5</li>

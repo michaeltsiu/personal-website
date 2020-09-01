@@ -20,8 +20,10 @@ export default function SystemDesign() {
       </div>
 
       <div className="portfolio-summary">
-        Horizontally scaled system design on an inherited codebase deployed on 4 AWS EC2 t2 micro instances capable of handling 10,579 client requests per second, 0% error rate and 61ms average response time. Load balanced and cached via NGINX.
-        </div>
+        <p>Horizontally scaled system design on an inherited codebase with a goal to at least reach 2,000 client requests per second.</p>
+        <br/>
+        <p>Achieved by being deployed on 4 AWS EC2 t2 micro instances capable of handling 10,579 client requests per second, 0% error rate and 61ms average response time. Load balanced and cached via NGINX.</p>
+      </div>
 
 
     </div>
