@@ -3,11 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaAngellist } from 'react-icons/fa';
 
-const activeStyle = {
-  color: 'black',
-  // textDecoration: 'underline'
-}
-
 export default function Navbar () {
   return (
     <div className="navbar-container">
@@ -16,7 +11,7 @@ export default function Navbar () {
             <NavLink
               to='/'
               exact
-              activeStyle={activeStyle}
+
               className='navlink-profile'>
                 <span className="navbar-picture"></span>
               </NavLink>
@@ -25,7 +20,7 @@ export default function Navbar () {
               <NavLink
               to='/'
               exact
-              activeStyle={activeStyle}
+
               className='navlink-profile'>
                 <span>Michael Siu</span>
               </NavLink>
@@ -34,17 +29,16 @@ export default function Navbar () {
             <NavLink
               to='/'
               exact
-              activeStyle={activeStyle}
+
               className='navlink-profile'>
               <span>Software Engineer</span>
               </NavLink></div>
         </div>
-      <div>
+      <div className="navbar-list">
         <div className="navbar-item">
           <NavLink
             to='/'
             exact
-            activeStyle={activeStyle}
             activeClassName="navlink-active"
             className="navlink-li">
               Home
@@ -54,7 +48,6 @@ export default function Navbar () {
           <NavLink
             to='/portfolio'
             exact
-            activeStyle={activeStyle}
             activeClassName="navlink-active"
             className="navlink-li">
               Portfolio
@@ -64,7 +57,6 @@ export default function Navbar () {
           <NavLink
             to='/resume'
             exact
-            activeStyle={activeStyle}
             activeClassName="navlink-active"
             className="navlink-li">
               Resume
@@ -74,7 +66,6 @@ export default function Navbar () {
           <NavLink
             to='/technical-skills'
             exact
-            activeStyle={activeStyle}
             activeClassName="navlink-active"
             className="navlink-li">
               Technical Skills
@@ -84,7 +75,6 @@ export default function Navbar () {
           <NavLink
             to='/contact'
             exact
-            activeStyle={activeStyle}
             activeClassName="navlink-active"
             className="navlink-li">
               Contact

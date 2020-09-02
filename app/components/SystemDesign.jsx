@@ -6,11 +6,13 @@ export default function SystemDesign() {
     <div className="portfolio-main">
 
       <div className="portfolio-video">
-        <img src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" width="50%" height="auto" max-width="75vw" />
+        <img src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" />
       </div>
 
       <div className="portfolio-tech">
-        React | PostgreSQL | AWS | Ubuntu | Artillery | Loader.io | NGINX
+      <span>
+          <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | <a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a> | <a href="https://loader.io/" target="_blank">Loader.io</a> | <a href="https://www.nginx.com/" target="_blank">NGINX</a>
+        </span>
 
           <div className="portfolio-icon">
           <a href='https://github.com/proj-minus-ultra/navbar-proxy' target="_blank">

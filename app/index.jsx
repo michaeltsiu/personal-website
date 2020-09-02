@@ -1,10 +1,9 @@
+import './styles.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import './styles.css';
-
-import Footer from './components/Footer.jsx';
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
 import Home from './components/Home.jsx';
@@ -32,7 +31,10 @@ class App extends React.Component {
       <React.Fragment>
         <div className="grid-container">
           <Router>
-            <div className="Navbar">
+            <div className="Sidebar">
+              <Navbar />
+            </div>
+            <div className="Topbar">
               <Navbar />
             </div>
             <div className="Main">
@@ -46,9 +48,6 @@ class App extends React.Component {
                   <Route render={() => <h1 className="error">Error: 404! Page not found. 😰</h1>} />
                 </Switch>
               </React.Suspense>
-              {/* <div className="Footer">
-                <Footer />
-              </div> */}
             </div>
           </Router>
         </div>

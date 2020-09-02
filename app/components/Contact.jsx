@@ -12,7 +12,7 @@ export default function Contact () {
       <div className="header">Contact</div>
       <div className="contact-main">
         <div>Feel free to get in touch by clicking any of the icons below:</div>
-        <div className="navbar-footer">
+        <div>
           <div className="icons">
             <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
               <FaLinkedin />

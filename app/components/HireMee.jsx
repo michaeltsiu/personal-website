@@ -6,12 +6,13 @@ export default function HireMee() {
     <div className="portfolio-main">
 
       <div className="portfolio-video">
-        <video src="/app/assets/Portfolio/Hire-mee/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" width="75%" height="auto" max-width="75vw" loop="loop" autoPlay="autoplay" />
+        <video src="/app/assets/Portfolio/Hire-mee/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
       </div>
 
       <div className="portfolio-tech">
-        React | Express | PostgreSQL | Node.JS
-
+        <span>
+          <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://reactrouter.com/" target="_blank">React Router</a> | <a href="https://expressjs.com/" target="_blank">Express</a> | <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | <a href="https://nodejs.org/" target="_blank">Node.JS</a>
+        </span>
         <div className="portfolio-icon">
           <a href='https://github.com/hire-mee/hire-mee' target="_blank">
             <FaGithub />
