@@ -17,13 +17,15 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 0.28fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Navbar Main";
+  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-rows: 0fr 1fr;
+  grid-template-areas:
+    "Topbar Topbar"
+    "Sidebar Main";
 }
 
-.Navbar {
-  grid-area: Navbar;
+.Sidebar {
+  grid-area: Sidebar;
   background-color: #f6f6f6;
   height: 100vh;
   padding-top: 3em;
@@ -37,11 +39,6 @@ body {
   height: 100vh;
 }
 
-.Footer {
-  background-color: rgb(36, 36, 36);
-  height: 20vh;
-  color: white;
-}
 /* GRID END */
 
 /* ETC START */
@@ -55,12 +52,15 @@ body {
 }
 
 .header {
-  /* background-color: rgb(235, 198, 104); */
   height: 10vh;
   padding: 2.5vh;
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
+}
+
+.icons {
+  margin-top: 5vh;
 }
 
 .icons a{
@@ -88,11 +88,6 @@ body {
 /* NAVBAR START */
 .navbar-container {
   text-align: center !important;
-  margin-top: 5vh;
-}
-
-.navbar-footer {
-  margin-top: 5vh;
 }
 
 .navbar-profile {
@@ -142,6 +137,7 @@ body {
 }
 
 .navlink-active {
+  color: black;
   --color: black;
   background-image: linear-gradient(var(--color) 0%, var(--color) 100%);
   background-repeat: repeat-x;
@@ -241,7 +237,6 @@ a.navlink-li:hover::before {
 /* TECH START */
 
 .tech-list {
-  margin-top: 12vh;
   margin-left: 15vw;
   margin-right: 15vw;
   display: flex;
@@ -265,8 +260,10 @@ a.navlink-li:hover::before {
   margin-bottom: 2vh;
 }
 
-.tech-item li p{
-  line-height: 1
+.tech-item li a{
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -288,7 +285,6 @@ a.navlink-li:hover::before {
 
 .resume-container {
   height: 80vh;
-  margin-top: 5vh;
   margin-bottom: 5vh;
   text-align: center;
 }
@@ -343,7 +339,6 @@ a.navlink-li:hover::before {
   list-style: none;
   font-size: 1.25em;
   justify-content: space-between;
-  margin-top: 3vh;
   margin-left: 20vw;
   margin-right: 20vw;
 }
@@ -378,6 +373,18 @@ a.navlink-li:hover::before {
   justify-content: center;
 }
 
+.portfolio-video video {
+  width: 75%;
+  height: auto;
+  max-width: 75vw;
+}
+
+.portfolio-video img {
+  width: 50%;
+  height: auto;
+  max-width: 75vw;
+}
+
 .portfolio-tech {
   display: flex;
   justify-content: center;
@@ -386,9 +393,12 @@ a.navlink-li:hover::before {
   font-size: 1.1em;
 }
 
+.portfolio-tech span a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .portfolio-summary {
-  /* display: flex; */
-  /* justify-content: center; */
   margin-top: 4vh;
   color: #a7a7a7;
   font-size: 1em;
@@ -406,3 +416,101 @@ a.navlink-li:hover::before {
 }
 
 /* PORTFOLIO END */
+
+@media screen and (max-width: 1080px) {
+  /* grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas:
+      "Topbar Topbar"
+      "Sidebar Main";
+  }
+  .Sidebar {
+    display: none;
+  }
+  .Topbar {
+    grid-area: Topbar;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  .header {
+    margin-top: 5vh;
+  }
+  /* navbar */
+  .navbar-profile {
+    display: none;
+  }
+  .navbar-footer {
+    display: none;
+  }
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    color: white;
+  }
+  .navbar-item {
+    color: #fff;
+    margin-right: 2vw;
+  }
+  .navlink-li {
+    color: #fff;
+  }
+  a.navlink-li:hover {
+    color: #fff;
+  }
+  .navlink-active {
+    --color: #fff;
+  }
+  a.navlink-li:before {
+    background-color: #fff;
+  }
+  /* home */
+  .home-text {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  /* portfolio */
+  .portfolio-body {
+    width: 100vw;
+    border: none;
+    box-shadow: none;
+  }
+  .portfolio-video video {
+    width: 90%;
+    height: auto;
+    max-width: 90vw;
+  }
+  .portfolio-video img {
+    width: 65%;
+    height: auto;
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbar-profile {
+    display: none;
+  }
+  .home-picture {
+    display: none;
+  }
+  .home-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
