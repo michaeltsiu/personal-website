@@ -244,7 +244,6 @@ a.navlink-li:hover::before {
   margin-top: 12vh;
   margin-left: 15vw;
   margin-right: 15vw;
-  height: 78vh;
   display: flex;
   justify-content: space-between;
 }
@@ -258,8 +257,18 @@ a.navlink-li:hover::before {
 
 .tech-item {
   font-size: 1em;
-  line-height: 1.5;
+  justify-content: center;
+  text-align: center;
 }
+
+.tech-item li{
+  margin-bottom: 2vh;
+}
+
+.tech-item li p{
+  line-height: 1
+}
+
 
 .tech20 {
   margin-left: 40px;
