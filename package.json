@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/michaeltsiu/personal-website#readme",
   "dependencies": {
-    "@iconify/icons-cib": "^1.0.3",
-    "@iconify/icons-codicon": "^1.0.0",
     "@iconify/icons-logos": "^1.0.12",
     "@iconify/icons-vscode-icons": "^1.0.1",
     "@iconify/react": "^1.1.3",
@@ -33,15 +31,17 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-slick": "^0.27.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.0.3",
+    "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",

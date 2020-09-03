@@ -6,12 +6,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
-import Home from './components/Home.jsx';
 
+import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Resume from './components/Resume.jsx';
 import TechnicalSkills from './components/TechnicalSkills.jsx';
-import Contact from './components/Contact.jsx'
+import Contact from './components/Contact.jsx';
+import Burger from './components/Burger.jsx';
 
 // const Home = React.lazy(() => import('./components/Home.jsx'));
 // const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
@@ -35,9 +36,12 @@ class App extends React.Component {
               <Navbar />
             </div>
             <div className="Topbar">
-              <Navbar />
+              <div className="navbar-topbar">
+                <Navbar />
+              </div>
             </div>
             <div className="Main">
+              <Burger />
               <React.Suspense fallback={<Loading />}>
                 <Switch>
                   <Route exact path='/' component={Home} />

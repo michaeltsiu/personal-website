@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const styles = {
   content: {
-    fontSize: '2.75em',
+    fontSize: '2em',
     marginTop: '20vh',
     textAlign: 'center',
     color: '#a7a7a7'

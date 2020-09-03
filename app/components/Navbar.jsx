@@ -11,7 +11,6 @@ export default function Navbar () {
             <NavLink
               to='/'
               exact
-
               className='navlink-profile'>
                 <span className="navbar-picture"></span>
               </NavLink>
@@ -20,7 +19,6 @@ export default function Navbar () {
               <NavLink
               to='/'
               exact
-
               className='navlink-profile'>
                 <span>Michael Siu</span>
               </NavLink>
@@ -29,7 +27,6 @@ export default function Navbar () {
             <NavLink
               to='/'
               exact
-
               className='navlink-profile'>
               <span>Software Engineer</span>
               </NavLink></div>

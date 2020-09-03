@@ -232,6 +232,9 @@ a.navlink-li:hover::before {
   margin-top: 2.5vh;
 }
 
+.home-burger {
+  display: none;
+}
 /* HOME END */
 
 /* TECH START */
@@ -286,6 +289,8 @@ a.navlink-li:hover::before {
 .resume-container {
   height: 80vh;
   margin-bottom: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
   text-align: center;
 }
 
@@ -293,7 +298,7 @@ a.navlink-li:hover::before {
   opacity: 1;
   box-shadow: 2px 5px 10px 0px #d2cdc5;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 94%;
   transition: box-shadow 0.3s;
 }
 
@@ -337,7 +342,7 @@ a.navlink-li:hover::before {
 .portfolio-title {
   display: flex;
   list-style: none;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   justify-content: space-between;
   margin-left: 20vw;
   margin-right: 20vw;
@@ -417,6 +422,15 @@ a.navlink-li:hover::before {
 
 /* PORTFOLIO END */
 
+.navbar-burger {
+  display: none;
+}
+
+/* .navbar-topbar {
+  display: flex;
+  justify-content: center;
+} */
+
 @media screen and (max-width: 1080px) {
   /* grid */
   .grid-container {
@@ -452,12 +466,13 @@ a.navlink-li:hover::before {
   .navbar-list {
     display: flex;
     flex-direction: row;
-    float: right;
+    float: left;
     color: white;
   }
   .navbar-item {
+    margin: 0.7em 0;
     color: #fff;
-    margin-right: 2vw;
+    margin-left: 2vw;
   }
   .navlink-li {
     color: #fff;
@@ -498,9 +513,22 @@ a.navlink-li:hover::before {
 }
 
 @media screen and (max-width: 720px) {
-  .navbar-profile {
+  .Topbar {
     display: none;
   }
+
+  .navbar-burger {
+    display: flex;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    margin-top: 20vh;
+    justify-content: center;
+    text-align: center;
+    float: none;
+  }
+
   .home-picture {
     display: none;
   }
@@ -512,5 +540,8 @@ a.navlink-li:hover::before {
     margin-top: 15vh;
     margin-left: 10vw;
     margin-right: 10vw;
+  }
+  .home-burger {
+    display: flex;
   }
 }
