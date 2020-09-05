@@ -20,7 +20,7 @@ export default function Navbar () {
               to='/'
               exact
               className='navlink-profile'>
-                <span>Michael Siu</span>
+                <span className="fontMedium">Michael Siu</span>
               </NavLink>
               </div>
             <div className="navbar-profileTitle">
@@ -32,7 +32,7 @@ export default function Navbar () {
               </NavLink></div>
         </div>
       <div className="navbar-list">
-        <div className="navbar-item">
+        <div className="navbar-item fontSmall">
           <NavLink
             to='/'
             exact

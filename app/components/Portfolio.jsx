@@ -43,11 +43,11 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <div className="header">
+        <div className="header fontLarge">
           <span>Portfolio</span>
         </div>
         <div>
-            <ul className="portfolio-title">
+            <ul className="portfolio-title fontMedium">
               <li
                 className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
                 onClick={() => this.changePage("hire-mee")}>

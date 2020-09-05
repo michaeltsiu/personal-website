@@ -9,19 +9,19 @@ export default function HireMee() {
         <video src="/app/assets/Portfolio/Hire-mee/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
       </div>
 
-      <div className="portfolio-tech">
+      <div className="portfolio-tech fontSmall">
         <span>
           <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://reactrouter.com/" target="_blank">React Router</a> | <a href="https://expressjs.com/" target="_blank">Express</a> | <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | <a href="https://nodejs.org/" target="_blank">Node.JS</a>
         </span>
         <div className="portfolio-icon">
           <a href='https://github.com/hire-mee/hire-mee' target="_blank">
-            <FaGithub />
+            <FaGithub className="fontMedium" />
           </a>
         </div>
 
       </div>
 
-      <div className="portfolio-summary">
+      <div className="portfolio-summary fontSmall">
         A web application that provides an organized space for job seekers to input information about submitted job applications.
         </div>
 

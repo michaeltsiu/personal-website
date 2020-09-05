@@ -25,11 +25,11 @@ import loaderIcon from '@iconify/icons-logos/loader';
 export default function TechnicalSkills() {
   return (
     <div>
-      <div className="header">Technical Skills</div>
+      <div className="header fontLarge">Technical Skills</div>
       <div className="tech-list">
         <div>
-          <h1 className="tech-cat">Front-End</h1>
-          <ul className="tech-item">
+          <h1 className="tech-cat fontMedium">Front-End</h1>
+          <ul className="tech-item fontSmall">
             <li>
               <a href="https://www.javascript.com/" target="_blank">
                 <div><Icon icon={javascriptIcon} /></div>
@@ -70,8 +70,8 @@ export default function TechnicalSkills() {
 
         </div>
         <div>
-          <h1 className="tech-cat">Back-End</h1>
-          <ul className="tech-item">
+          <h1 className="tech-cat fontMedium">Back-End</h1>
+          <ul className="tech-item fontSmall">
             <li>
               <a href="https://nodejs.org/" target="_blank">
                 <div><Icon icon={nodejsIcon} /></div>
@@ -112,8 +112,8 @@ export default function TechnicalSkills() {
 
         </div>
         <div>
-          <h1 className="tech-cat">Others</h1>
-          <ul className="tech-item">
+          <h1 className="tech-cat fontMedium">Others</h1>
+          <ul className="tech-item fontSmall">
             <li>
               <a href="https://git-scm.com/" target="_blank">
                 <div><Icon icon={gitIcon} /></div>
