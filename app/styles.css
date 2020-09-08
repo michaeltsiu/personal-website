@@ -377,6 +377,25 @@ a.navlink-li:hover::before {
 }
 
 .portfolio-video {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+.portfolio-video video {
+  width: 75%;
+  height: auto;
+  max-width: 75vw;
+}
+
+.portfolio-video img {
+  width: 50%;
+  height: auto;
+  max-width: 75vw;
+}
+
+/* .portfolio-video {
   display: flex;
   justify-content: center;
 }
@@ -388,16 +407,10 @@ a.navlink-li:hover::before {
 }
 
 .portfolio-video img {
-  width: 75%;
-  height: auto;
-  max-width: 75vw;
-}
-
-.portfolio-video img {
   width: 50%;
   height: auto;
   max-width: 75vw;
-}
+} */
 
 .portfolio-tech {
   display: flex;
