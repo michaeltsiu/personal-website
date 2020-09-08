@@ -10,20 +10,21 @@ export default function SystemDesign() {
       </div>
 
       <div className="portfolio-tech fontSmall">
-      <span>
+        <div>
           <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | <a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a> | <a href="https://loader.io/" target="_blank">Loader.io</a> | <a href="https://www.nginx.com/" target="_blank">NGINX</a>
-        </span>
-
-          <div className="portfolio-icon">
-          <a href='https://github.com/proj-minus-ultra/navbar-proxy' target="_blank">
-            <FaGithub className="fontMedium" />
-          </a>
+          <span className="portfolio-icon">
+            <a href='https://github.com/proj-minus-ultra/navbar-proxy' target="_blank">
+              <FaGithub className="fontMedium" />
+            </a>
+          </span>
         </div>
+
+
       </div>
 
       <div className="portfolio-summary fontSmall">
         <p>Horizontally scaled system design on an inherited codebase with a goal to at least reach 2,000 client requests per second.</p>
-        <br/>
+        <br />
         <p>Achieved by being deployed on 4 AWS EC2 t2 micro instances capable of handling 10,579 client requests per second, 0% error rate and 61ms average response time. Load balanced and cached via NGINX.</p>
       </div>
 

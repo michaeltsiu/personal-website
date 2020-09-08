@@ -41,7 +41,7 @@ export default function Navbar () {
               Home
             </NavLink>
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item fontSmall">
           <NavLink
             to='/portfolio'
             exact
@@ -50,7 +50,7 @@ export default function Navbar () {
               Portfolio
           </NavLink>
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item fontSmall">
           <NavLink
             to='/resume'
             exact
@@ -59,7 +59,7 @@ export default function Navbar () {
               Resume
           </NavLink>
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item fontSmall">
           <NavLink
             to='/technical-skills'
             exact
@@ -68,7 +68,7 @@ export default function Navbar () {
               Technical Skills
           </NavLink>
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item fontSmall">
           <NavLink
             to='/contact'
             exact

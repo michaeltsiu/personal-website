@@ -10,15 +10,14 @@ export default function HireMee() {
       </div>
 
       <div className="portfolio-tech fontSmall">
-        <span>
+        <div>
           <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://reactrouter.com/" target="_blank">React Router</a> | <a href="https://expressjs.com/" target="_blank">Express</a> | <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | <a href="https://nodejs.org/" target="_blank">Node.JS</a>
-        </span>
-        <div className="portfolio-icon">
+          <span className="portfolio-icon">
           <a href='https://github.com/hire-mee/hire-mee' target="_blank">
             <FaGithub className="fontMedium" />
           </a>
+        </span>
         </div>
-
       </div>
 
       <div className="portfolio-summary fontSmall">

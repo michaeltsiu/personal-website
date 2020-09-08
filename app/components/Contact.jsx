@@ -10,7 +10,7 @@ export default function Contact () {
   return (
     <div>
       <div className="header fontLarge">Contact</div>
-      <div className="contact-main">
+      <div className="contact-main fontSmall">
         <div>Feel free to get in touch by clicking any of the icons below:</div>
         <div>
           <div className="icons">
