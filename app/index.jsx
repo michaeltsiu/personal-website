@@ -20,44 +20,36 @@ import Burger from './components/Burger.jsx';
 // const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
 // const Contact = React.lazy(() => import('./components/Contact.jsx'));
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <div className="grid-container">
-          <Router>
-            <div className="Sidebar">
+const App = () => {
+  return (
+    <React.Fragment>
+      <div className="grid-container">
+        <Router>
+          <div className="Sidebar">
+            <Navbar />
+          </div>
+          <div className="Topbar">
+            <div className="navbar-topbar">
               <Navbar />
             </div>
-            <div className="Topbar">
-              <div className="navbar-topbar">
-                <Navbar />
-              </div>
-            </div>
-            <div className="Main">
-              <Burger />
-              <React.Suspense fallback={<Loading />}>
-                <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route exact path='/portfolio' component={Portfolio} />
-                  <Route exact path='/resume' component={Resume} />
-                  <Route exact path='/technical-skills' component={TechnicalSkills} />
-                  <Route exact path='/contact' component={Contact} />
-                  <Route render={() => <h1 className="error fontMedium">Error: 404! Page not found. 😰</h1>} />
-                </Switch>
-              </React.Suspense>
-            </div>
-          </Router>
-        </div>
-      </React.Fragment>
-    )
-  }
+          </div>
+          <div className="Main">
+            <Burger />
+            <React.Suspense fallback={<Loading />}>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/portfolio' component={Portfolio} />
+                <Route exact path='/resume' component={Resume} />
+                <Route exact path='/technical-skills' component={TechnicalSkills} />
+                <Route exact path='/contact' component={Contact} />
+                <Route render={() => <h1 className="error fontMedium">Error: 404! Page not found. 😰</h1>} />
+              </Switch>
+            </React.Suspense>
+          </div>
+        </Router>
+      </div>
+    </React.Fragment>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));

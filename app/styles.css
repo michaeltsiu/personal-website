@@ -395,23 +395,6 @@ a.navlink-li:hover::before {
   max-width: 75vw;
 }
 
-/* .portfolio-video {
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio-video video {
-  width: 75%;
-  height: auto;
-  max-width: 75vw;
-}
-
-.portfolio-video img {
-  width: 50%;
-  height: auto;
-  max-width: 75vw;
-} */
-
 .portfolio-tech {
   display: flex;
   justify-content: center;
@@ -444,16 +427,15 @@ a.navlink-li:hover::before {
   transition: all 0.2s ease-in-out 0s;
 }
 
+.portfolio-tech div a:hover{
+  color: rgb(80, 80, 80);
+  transition: all 0.2s ease-in-out 0s;
+}
 /* PORTFOLIO END */
 
 .navbar-burger {
   display: none;
 }
-
-/* .navbar-topbar {
-  display: flex;
-  justify-content: center;
-} */
 
 @media screen and (max-width: 1080px) {
   /* grid */

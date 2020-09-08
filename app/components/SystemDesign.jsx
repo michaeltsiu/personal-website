@@ -19,7 +19,6 @@ export default function SystemDesign() {
           </span>
         </div>
 
-
       </div>
 
       <div className="portfolio-summary fontSmall">
