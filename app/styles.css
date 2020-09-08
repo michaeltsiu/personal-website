@@ -474,7 +474,7 @@ a.navlink-li:hover::before {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 99;
   }
   .header {
